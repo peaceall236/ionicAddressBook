@@ -14,22 +14,22 @@ the ui is written with ionic/react
 
 ## installation
 ### DB Migrations
-Go to /db folder
-run composer install
-run vendor/bin/phinx init
-open the create phinx.yml
+Go to /db folder `cd /db`
+run `composer install`
+run `vendor/bin/phinx init`
+open the created phinx.yml
 change configuraion
 
 ##### run migrations
-inside /db run ./vendor/bin/phinx migrate -e development
+inside /db run `./vendor/bin/phinx migrate -e development`
 
 ### Serve the api
 Go to /web/api
-run composer install
+run `composer install`
 generate api key on https://onlinerandomtools.com/generate-random-string
 add api key to .env file
 
-run php -S localhost:8000 -t public
+run `php -S localhost:8000 -t public`
 
 you can change the port and the url but remember to update the ionic configured api endpoint
 
