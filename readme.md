@@ -24,7 +24,7 @@ change configuraion
 inside /db run `./vendor/bin/phinx migrate -e development`
 
 ### Serve the api
-Go to /web/api
+Go to /api
 run `composer install`
 generate api key on https://onlinerandomtools.com/generate-random-string
 add api key to .env file
@@ -35,7 +35,7 @@ you can change the port and the url but remember to update the ionic configured 
 
 ### Serve Ionic App
 
-run `cd /web/ui`
+run `cd /ui`
 run `npm install`
 
 make sure ionic-cli is installed
@@ -44,7 +44,7 @@ run `ionic serve`
 
 if you have modified the api enpoint
 
-run `vim /web/ui/.env` and update the REACT_APP_SERVER_URL variable
+run `vim /ui/.env` and update the REACT_APP_SERVER_URL variable
 
 
 Thanks.
